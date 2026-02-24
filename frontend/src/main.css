@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* ── Fondo oscuro FC 26 ── */
+  html, body, #app {
+    min-height: 100vh;
+    /* Negro puro como FC26 — cards viran contra el negro */
+    background: #050505;
+    background-attachment: fixed;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Selects options con fondo oscuro */
+  select option {
+    background-color: #0a0820;
+    color: white;
+  }
+
+  /* Scrollbar FC 26 (gold) */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0.02);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(245, 200, 24, 0.35);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(245, 200, 24, 0.6);
+  }
+}

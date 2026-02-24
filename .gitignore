@@ -1,0 +1,12 @@
+node_modules/
+dist/
+*.exe
+*~
+*.test
+backend/go.sum
+frontend/.svelte-kit/
+.env
+*.env
+.DS_Store
+Thumbs.db
+.claude/
